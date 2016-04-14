@@ -43,11 +43,10 @@
     </div>
 
     <div class="search">
-        <form action="https://cse.google.com/cse/publicurl"
+        <form onsubmit="return CARGO.searchOnGoogle()"
               target="_blank"
               method="GET">
-            <input name="q" class="search" placeholder="Search docs" type="text"/>
-            <input name="cx" type="hidden" value="010207976098806417817:egxxzogbto4" />
+            <input id="docs-search-query" class="search" placeholder="Search docs" type="text"/>
         </form>
     </div>
 
@@ -172,7 +171,7 @@ Hello, world!</code></pre>
 
 <script type='text/javascript' src='javascripts/prism.js'></script>
 <script type='text/javascript' src='javascripts/all.js'></script>
-
+<script type='text/javascript' src='javascripts/cargo.js'></script>
 
 </body>
 </html>
